@@ -1,0 +1,90 @@
+'<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: rgb(58, 58, 58);
+            color: aliceblue;
+            font: normal 11pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relatório do dia : </h1>
+    <p> Boa noite a todos!! </p>
+    <p> Aqui está um resumo sobre o que aprendi hoje: </p>
+    <p> Hoje aprendi um pouco sobre como usar operadores lógicos <strong>( !, && e || )</strong>, os operadores ternários <strong>( ? e : )</strong> e para fechar um pouco sobre <strong>DOM</strong>. </p>
+    <p> <strong>Sendo ( ! == nao ) para negação, ou seja : quando for false == true e vice versa.</p> </strong>
+    <p> <strong>( && == e ) para conjunção, ou seja : se apontar todas as condições como true então será true mesmo, senão será false.</p> </strong>
+    <p> 
+        <div> 
+         Ex:
+        </div>
+            var a = 2
+            <div>
+             var b = 4
+            </div>
+                a > b (false) &&  b > a (true) == false, apenas uma apontou true
+                <div> 
+                  a < b (true) && a > b - 3 (true) == true, as duas apontaram true     
+                </div>
+
+    <p> <strong>( || == ou ) para disjunção, ou seja : se uma das condições estiver verdadeira (true) então apontará como true.</strong>
+        <div> 
+            Ex:
+           </div>
+               var a = 2
+               <div>
+                var b = 4
+               </div>
+                   a > b (false) ||  b > a (true) == true, uma apontou como verdadeira
+                   <div> 
+                     a > b (false) || a < b - 3 (false) == false, nenhuma apontou como verdadeira  
+                   </div>
+    </p>
+    
+    <p>
+        <div>
+            <p>
+             Arvore DOM :
+            </p>
+        </div>
+                <div>
+                 - A janela do navegador se chama 'window' que é um objeto DOM
+                </div>
+    </p>        
+        <p> 
+            <div>
+             Dentro do window existe :     
+            </div>
+        </p>
+                <div>
+                 °location : URL; qual pagina atual e pagina anterior
+                </div>
+                    <div>
+                     ° document : documento atual
+                    </div>
+                        <div>
+                         ° history  : histórico
+                        </div>     
+                <p>     
+                           
+                        <div>
+                         Na arvore, quem vem antes é 'parent' quem vem depois é 'child' .
+                        </div>
+                </p>  
+                     
+                
+<p>Essa semana pra mim foi de muito aprendizado, e estou gostando muito! Mesmo quando aparece algo que eu não entenda, isso me dá mais vontade ainda de querer entender para resolver.</p>
+    
+<script>
+        
+        var feriado = 'Bora curtir o feriado e estudar também !'
+        var p2 = window.document.getElementsByTagName('p')[3]
+        window.document.write('Otimo fim de noite e final de semana a todos! ' + feriado)
+</script>
+</body>
+</html>'

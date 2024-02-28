@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+    <style>
+        button {
+            padding: 30px;
+            font: bold 15pt Arial;
+            box-shadow: 1px 1px 5px black;
+        }
+        section {
+            padding-top: 20px;
+            font: bold 20pt Arial;
+            
+        }
+        section#sessao {
+            font: normal 14pt Arial;
+        }
+        body{
+            font: bold 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de medidas</h1>
+    <button onclick="clicar()">Converter</button>
+    <script>
+        function clicar(){
+            let m = Number(prompt('Digite uma distância em metros (m)'))
+            let km = m / 1000
+            let hm = m / 100   
+            let dam = m / 10
+            let dm = m * 10
+            let cm = m * 100
+            let mm = m * 1000
+               
+            let resultado = document.getElementById('sessao')
+            resultado.innerText = `A distância de ${m} metros, corresponde a : 
+            
+             ${km.toLocaleString()} quilômetros (Km) 
+             ${hm.toLocaleString()} hectômetros (Hm) 
+             ${dam.toLocaleString()} decâmetros (Dam) 
+             ${dm.toLocaleString()} decímetros (dm) 
+             ${cm.toLocaleString()} centímetros (cm) 
+             ${mm.toLocaleString()} milímetros (mm)`
+        }
+        
+     
+     
+     
+    </script>
+
+    <section id="sessao">Clique no botão acima para iniciar.</section>
+</body>
+</html>

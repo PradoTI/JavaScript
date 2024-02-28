@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor R$ -> US$ </title>
+    <style>
+        button {
+            padding: 40px;
+            font: bold 15pt Arial;
+            box-shadow: 1px 1px 5px black;
+        }
+        h1 {
+            font: bolder 2em Arial;
+        }
+       
+        section#sessao{
+            padding-top: 20px;
+            font: normal 1em Arial;
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+        let dolarAtual = prompt('Antes de mais nada. Quanto está a cotação atual do dólar?')       
+    </script>
+    <h1>Conversor R$ -> US$</h1>
+    <button onclick="clicar()">Converter</button>
+    <script>
+        function clicar() {
+            let carteira = Number(prompt('Quantos R$ você tem na carteira?'))
+            let dolares = carteira / dolarAtual
+            let res = document.querySelector('section#sessao')
+            res.innerText = `Você pode comprar ${dolares.toLocaleString()} dólares com os R$${carteira.toFixed(2)} que possui na carteira.`
+        }
+        
+    </script>
+    <section id="sessao">
+        <h2>Clique no botão acima para iniciar.</h2>
+    </section>
+</body>
+</html>
